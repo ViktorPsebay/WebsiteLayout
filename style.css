@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Revalia&display=swap");
+
+.first-screen {
+  background: #eeeff1;
+  padding: 0 100px 140px 100px;
+}
+
+.header {
+  margin-bottom: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  font-family: Revalia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height 
+
+  text-align: center;*/
+  color: #34547a;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-menu__elements {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  margin-right: 42px;
+
+  /* Accent */
+
+  color: #34547a;
+}
+.header-menu__elements:last-child {
+  margin-right: 0;
+}
+.header-menu__elements:hover {
+  border-bottom: 1px solid blue;
+}
+
+.first-screen__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-screen__image {
+  padding: 0 142px;
+}
+
+.first-screen__title {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+
+  color: #000000;
+}
+
+.first-screen__paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #727272;
+}
+
+.first-screen__button {
+  width: 225px;
+  height: 65px;
+  background: #34547a;
+  color: white;
+}
+
+.about-me {
+  text-align: center;
+  background: #e5e5e5;
+  padding: 100px 400px;
+}
+
+.about-me__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.about-me__paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #727272;
+}
+
+.numbers {
+  background: #34547a;
+  margin: 0;
+  padding: 100px;
+  display: flex;
+}
+
+.numbers__item {
+  margin-right: 49px;
+}
+
+.skills {
+  margin: 0;
+  background: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skills__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+
+  color: #000000;
+}
+
+progress {
+  background-color: #34547a;
+  border: 0;
+  height: 3px;
+  border-radius: 1px;
+  margin: 0;
+}
+
+.skills__paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+  color: #727272;
+}
+
+.skills__image {
+  padding: 100px 0;
+}
+
+.video {
+  background: #eeeff1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  margin: 0;
+  padding: 100px 0 0;
+  color: #000000;
+}
+
+.video__paragraph {
+  text-align: center;
+  padding: 50px 400px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+  color: #727272;
+}
+
+.video__container-for-image {
+  position: relative;
+}
+
+.video__image {
+  padding: 0 0 100px;
+  width: 1110px;
+  height: 600px;
+}
+
+.video__play {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  top: 30%;
+  bottom: auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__image {
+  width: 480px;
+  height: 480px;
+}
