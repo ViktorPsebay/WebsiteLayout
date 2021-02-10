@@ -31,10 +31,13 @@
         </div>
     </section>
     <section class="about-me">
-        <h1 class="about-me__title">Обо мне</h1>
+        <div class="about-me__container">
+            <h1 class="about-me__title">Обо мне</h1>
         <p class="about-me__paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
          
+        </div>
+        
     </section>
     <section class="numbers">
         <img class="numbers__item" src="numbers__item.png">
@@ -49,15 +52,15 @@
             <h1 class="skills__title">Мои навыки</h1>
             <div>
                 <p class="skills__paragraph">Adobe Photoshop</p>
-                <progress value="75" max="100"></progress>
+                <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
             </div>
             <div>
                 <p class="skills__paragraph">Adobe Photoshop</p>
-                <progress value="300" max="400"></progress>
+                <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
             </div>
             <div>
                 <p class="skills__paragraph">Adobe Photoshop</p>
-                <progress value="75" max="100"></progress>
+                <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
             </div>
         </div>
         <img class="skills__image" src="Rectangle 3.png">
@@ -69,35 +72,71 @@
                 Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>            
         </div>
         <div class="video__container-for-image">
-            <img class="video__image" src="video.png">
-            <img class="video__play" src="Vector.png">
+            <!--<img class="video__play" src="video.png">-->
+            <img class="video__image" src="Vector.png">
         </div>
         
     </section>
     <section class="projects">
-        <div class="video__image">
-            <img src="Rectangle 7.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.1.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.3.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.3.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.3.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.3.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.3.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.3.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.3.png">            
         </div>
-        <div class="video__image">
-            <img src="Rectangle 7.png">            
+        <div class="projects__item">
+            <img class="projects__image" src="Rectangle 7.png">            
+        </div>
+    </section>
+    <!--<section class="projects">
+        <img class="projects__image" src="Rectangle 7.png">
+        <img class="projects__image" src="Rectangle 7.3.png">            
+        <img class="projects__image" src="Rectangle 7.png">
+        <img class="projects__image" src="Rectangle 7.3.png">        
+        <img class="projects__image" src="Rectangle 7.3.png">
+        <img class="projects__image" src="Rectangle 7.png">
+        <img class="projects__image" src="Rectangle 7.3.png">
+        <img class="projects__image" src="Rectangle 7.png">
+    </section>-->
+    <section class="form">
+        <h1 class="form__title">Хотите веб-сайт?</h1>
+        <p class="form__paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        <form>
+            <!--<p><input name="a"> send<input type="submit" value="send"></p>-->
+            <div class="form__container">
+                <input class="form__input" type="text" name="name" value="Ваше имя">
+                <input class="form__input" type="email" name="login" value="Ваш email">    
+            </div>
+                        
+            <input class="form__input_message" type="text" name="message" value="Сообщение">
+        </form>
+        <button class="form__button">ОТПРАВИТЬ</button>
+    </section>
+    <section class="footer">
+        <div>
+            <p class="footer__name">Брикалов Виктор</p>
+            <p class="footer__copyright">(с) 2018. Все права защищены.</p>
+        </div>
+        <div class="footer__vk">
+            <img src="vk.png">
+            <img src="vk.png">
+            <img src="vk.png">
         </div>
     </section>
 </body>
