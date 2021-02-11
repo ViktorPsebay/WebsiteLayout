@@ -6,11 +6,11 @@ body {
 
 .first-screen {
   background: #eeeff1;
-  padding: 0 100px 140px 100px;
+  padding: 0 100px 100px;
 }
 
 .header {
-  margin-bottom: 140px;
+  padding: 27px 0 140px;
   display: flex;
   justify-content: space-between;
 }
@@ -21,11 +21,8 @@ body {
   font-weight: normal;
   font-size: 48px;
   line-height: 60px;
-
-  /* identical to box height 
-
-  text-align: center;*/
   color: #34547a;
+  margin: 0 0 22px;
 }
 
 .header__logo:hover {
@@ -47,9 +44,6 @@ body {
   line-height: 26px;
   letter-spacing: 0.1em;
   margin-right: 42px;
-
-  /* Accent */
-
   color: #34547a;
 }
 .header-menu__elements:last-child {
@@ -66,7 +60,7 @@ body {
 }
 
 .first-screen__image {
-  padding: 0 142px;
+  padding: 0 130px;
 }
 
 .first-screen__title {
@@ -99,7 +93,7 @@ body {
 
 .about-me {
   text-align: center;
-  background: #e5e5e5;
+  background: #ffffff;
   padding: 100px 0;
   display: flex;
   justify-content: center;
@@ -116,8 +110,8 @@ body {
   font-size: 32px;
   line-height: 37px;
   text-align: center;
-
   color: #000000;
+  margin: 65px 0 50px;
 }
 
 .about-me__paragraph {
@@ -127,7 +121,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-
+  margin: 0;
   color: #727272;
 }
 
@@ -147,10 +141,14 @@ body {
 
 .skills {
   margin: 0;
-  background: #e5e5e5;
+  background: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.skills__container {
+  max-width: 100%;
 }
 
 .skills__title {
@@ -167,20 +165,14 @@ body {
   width: 445px;
   height: 4px;
   background: #c4c4c4;
+  max-width: 100%;
 }
 
 .skills__decoration_inserted {
   width: 350px;
   height: 4px;
   background: #34547a;
-}
-
-progress {
-  background-color: #34547a;
-  border: 0;
-  height: 3px;
-  border-radius: 1px;
-  margin: 0;
+  max-width: 75%;
 }
 
 .skills__paragraph {
@@ -196,7 +188,6 @@ progress {
 .skills__image {
   padding: 100px 0;
   width: 555px;
-  height: 450px;
 }
 
 .video {
@@ -204,6 +195,7 @@ progress {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .video__title {
@@ -220,42 +212,33 @@ progress {
 
 .video__paragraph {
   text-align: center;
-  padding: 50px 400px;
+  padding: 50px 25% 57px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 0;
+  margin: 0;
   color: #727272;
 }
 
 .video__container-for-image {
-  width: 1110px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("video.png");
-  margin-bottom: 100px;
+  position: relative;
 }
 
 .video__image {
-  padding: 0 0 100px;
-}
-
-.video__image_background {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*.video__image {
-  padding: 0 0 100px;
   width: 1110px;
-  height: 600px;
-}*/
+  max-width: 100%;
+}
+
+.video__container-for-image::after {
+  content: url("Vector.png");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
 
 .video__play {
   position: absolute;
@@ -268,7 +251,7 @@ progress {
 .projects {
   display: flex;
   flex-flow: row wrap;
-  padding-bottom: 28px;
+  padding: 28px 0;
 }
 
 .projects__item {
@@ -278,7 +261,6 @@ progress {
 }
 
 .projects__image {
-  /*width: 25%;*/
   max-width: 100%;
 }
 
@@ -312,19 +294,12 @@ progress {
   opacity: 1;
 }
 
-/*.projects__image_background {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("Rectangle 7.1.png");
-}*/
-
 .form {
   background: #eeeff1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0;
 }
 
 .form__title {
@@ -335,17 +310,24 @@ progress {
   line-height: 37px;
   text-align: center;
   margin: 0;
-  padding: 100px 0 0;
   color: #000000;
 }
 
 .form__paragraph {
   width: 540px;
   text-align: center;
-  margin: 50px 0 65px;
+  margin: 50px 0 45px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #727272;
 }
 
-.form__container {
+.form__name-and-email {
   display: flex;
   justify-content: space-between;
 }
@@ -353,13 +335,13 @@ progress {
 .form__input {
   width: 255px;
   height: 50px;
-  margin: 50px 0 65px;
+  margin: 20px 0 0;
 }
 
 .form__input_message {
   margin: 20px 0 50px;
   width: 540px;
-  height: 75px;
+  height: 175px;
 }
 
 .form__button {
@@ -367,7 +349,6 @@ progress {
   height: 55px;
   background: #34547a;
   color: white;
-  margin-bottom: 100px;
 }
 
 .footer {
@@ -402,12 +383,21 @@ progress {
 }
 
 @media (max-width: 1279px) {
+  .first-screen {
+    padding: 22px 19px 95px;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
   .header__menu {
     display: none;
   }
 
   .first-screen__header {
     margin: 0 0 67px;
+    padding: 0;
   }
 
   .first-screen__footer {
@@ -420,7 +410,105 @@ progress {
   }
 
   .first-screen__image {
-    padding: 38px;
+    padding: 0 38px;
     max-width: 100%;
+  }
+
+  .first-screen__design {
+    text-align: center;
+  }
+
+  .first-screen__title {
+    font-size: 36px;
+    line-height: 100%;
+  }
+  .first-screen__paragraph {
+    margin: 44px 0;
+    line-height: 120%;
+  }
+
+  .about-me {
+    padding: 91px 0 82px;
+  }
+
+  .about-me__title {
+    margin: 0 0 42px;
+  }
+  .numbers {
+    padding: 75px 0 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .numbers__item {
+    margin: 0 0 89px;
+    width: 50%;
+  }
+
+  .skills {
+    padding: 82px 18px 103px;
+    flex-direction: column-reverse;
+  }
+
+  .skills__image {
+    padding: 0 0 98px;
+    max-width: 100%;
+  }
+
+  .skills__title {
+    margin: 0 0 42px;
+  }
+
+  .video {
+    padding: 91px 18px;
+  }
+
+  .video__title {
+    padding: 0;
+  }
+
+  .video__paragraph {
+    padding-top: 34px;
+    line-height: 120%;
+  }
+  .projects__item {
+    width: 50%;
+  }
+
+  .projects__image {
+    width: 100%;
+  }
+
+  .form {
+    padding: 91px 17px 100px 16px;
+  }
+
+  .form__container {
+    width: 100%;
+  }
+
+  .form__paragraph {
+    margin: 34px 0 28px;
+    line-height: 120%;
+  }
+
+  .form__name-and-email {
+    flex-direction: column;
+  }
+  .form__input {
+    width: 100%;
+  }
+
+  .form__input_message {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+
+  .footer__name {
+    text-align: center;
   }
 }
