@@ -4,13 +4,20 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 1150px;
+}
+
 .first-screen {
   background: #eeeff1;
-  padding: 0 100px 100px;
+  padding: 57px 0 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-  padding: 27px 0 140px;
   display: flex;
   justify-content: space-between;
 }
@@ -55,12 +62,13 @@ body {
 
 .first-screen__footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  padding-top: 140px;
 }
 
 .first-screen__image {
-  padding: 0 130px;
+  padding-right: 130px;
 }
 
 .first-screen__title {
@@ -72,6 +80,10 @@ body {
   line-height: 79px;
 
   color: #000000;
+}
+
+.first-screen__design {
+  width: 540px;
 }
 
 .first-screen__paragraph {
@@ -89,12 +101,13 @@ body {
   height: 65px;
   background: #34547a;
   color: white;
+  border: none;
 }
 
 .about-me {
   text-align: center;
   background: #ffffff;
-  padding: 100px 0;
+  padding: 119px 0 100px;
   display: flex;
   justify-content: center;
 }
@@ -111,7 +124,7 @@ body {
   line-height: 37px;
   text-align: center;
   color: #000000;
-  margin: 65px 0 50px;
+  margin: 0 0 50px;
 }
 
 .about-me__paragraph {
@@ -128,7 +141,13 @@ body {
 .numbers {
   background: #34547a;
   margin: 0;
-  padding: 100px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.numbers__container {
+  width: 1150px;
   display: flex;
   justify-content: center;
 }
@@ -140,15 +159,19 @@ body {
 }
 
 .skills {
-  margin: 0;
   background: #ffffff;
+  padding: 102px 0 101px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
 .skills__container {
-  max-width: 100%;
+  width: 1150px;
+  margin: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skills__title {
@@ -159,6 +182,7 @@ body {
   line-height: 37px;
 
   color: #000000;
+  margin: 0 0 50px;
 }
 
 .skills__decoration {
@@ -166,6 +190,7 @@ body {
   height: 4px;
   background: #c4c4c4;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .skills__decoration_inserted {
@@ -181,12 +206,11 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 0;
+  margin: 0 0 20px;
   color: #727272;
 }
 
 .skills__image {
-  padding: 100px 0;
   width: 555px;
 }
 
@@ -195,7 +219,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+
+.video__container-for-text {
+  width: 540px;
+  margin-bottom: 57px;
 }
 
 .video__title {
@@ -205,14 +234,12 @@ body {
   font-size: 32px;
   line-height: 37px;
   text-align: center;
-  margin: 0;
-  padding: 100px 0 0;
+  margin: 0 0 50px;
   color: #000000;
 }
 
 .video__paragraph {
   text-align: center;
-  padding: 50px 25% 57px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -231,21 +258,11 @@ body {
   max-width: 100%;
 }
 
-.video__container-for-image::after {
-  content: url("Vector.png");
+.video__play {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  opacity: 1;
-}
-
-.video__play {
-  position: absolute;
-  left: 50%;
-  right: auto;
-  top: 30%;
-  bottom: auto;
 }
 
 .projects {
@@ -254,10 +271,15 @@ body {
   padding: 28px 0;
 }
 
+.projects__container {
+  width: 50%;
+  display: flex;
+}
+
 .projects__item {
   line-height: 0;
   position: relative;
-  width: 25%;
+  width: 50%;
 }
 
 .projects__image {
@@ -277,7 +299,7 @@ body {
 }
 
 .projects__item::after {
-  content: url("view.png");
+  content: url("../images/view.png");
   position: absolute;
   top: 50%;
   left: 50%;
@@ -296,6 +318,13 @@ body {
 
 .form {
   background: #eeeff1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form__container {
+  width: 540px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,15 +365,18 @@ body {
   width: 255px;
   height: 50px;
   margin: 20px 0 0;
+  border: none;
 }
 
 .form__input_message {
   margin: 20px 0 50px;
   width: 540px;
   height: 175px;
+  border: none;
 }
 
 .form__button {
+  border: none;
   width: 190px;
   height: 55px;
   background: #34547a;
@@ -383,8 +415,15 @@ body {
 }
 
 @media (max-width: 1279px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    max-width: 100%;
+  }
+
   .first-screen {
-    padding: 22px 19px 95px;
+    padding: 22px 26px 95px 19px;
   }
 
   .header__logo {
@@ -401,6 +440,7 @@ body {
   }
 
   .first-screen__footer {
+    padding-top: 0;
     flex-direction: column;
   }
 
@@ -415,6 +455,7 @@ body {
   }
 
   .first-screen__design {
+    max-width: 100%;
     text-align: center;
   }
 
@@ -428,14 +469,19 @@ body {
   }
 
   .about-me {
-    padding: 91px 0 82px;
+    padding: 91px 26px 82px;
   }
 
   .about-me__title {
     margin: 0 0 42px;
   }
   .numbers {
+    max-width: 100%;
     padding: 75px 0 0;
+  }
+
+  .numbers__container {
+    max-width: 100%;
     flex-wrap: wrap;
     text-align: center;
   }
@@ -446,7 +492,10 @@ body {
   }
 
   .skills {
-    padding: 82px 18px 103px;
+    padding: 82px 18px 73px;
+  }
+  .skills__container {
+    max-width: 100%;
     flex-direction: column-reverse;
   }
 
@@ -455,6 +504,9 @@ body {
     max-width: 100%;
   }
 
+  .skills__list {
+    max-width: 100%;
+  }
   .skills__title {
     margin: 0 0 42px;
   }
@@ -465,14 +517,32 @@ body {
 
   .video__title {
     padding: 0;
+    margin: 0;
   }
 
   .video__paragraph {
     padding-top: 34px;
     line-height: 120%;
   }
-  .projects__item {
-    width: 50%;
+
+  .video__container-for-text {
+    max-width: 100%;
+  }
+
+  .video__container-for-image {
+    max-width: 100%;
+  }
+
+  .video__play {
+    max-width: 75px;
+  }
+
+  .projects__container {
+    width: 100%;
+  }
+
+  .projects__container_reverse {
+    flex-direction: row-reverse;
   }
 
   .projects__image {
@@ -484,15 +554,23 @@ body {
   }
 
   .form__container {
+    padding: 0;
     width: 100%;
   }
 
   .form__paragraph {
+    max-width: 100%;
     margin: 34px 0 28px;
     line-height: 120%;
   }
 
+  .form__container-for-input {
+    max-width: 100%;
+  }
+
   .form__name-and-email {
+    width: 540px;
+    max-width: 100%;
     flex-direction: column;
   }
   .form__input {

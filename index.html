@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 <body>
-    <section class="first-screen">
-        <div class="first-screen__header header">
+    <section class="first-screen" >
+        <div class="first-screen__header header container">
             <p class="header__logo">WD</p>
             <nav class="header__menu header-menu">
                 <a class="header-menu__elements" href="#">ГЛАВНАЯ</a>
@@ -19,8 +19,8 @@
                 <a class="header-menu__elements" href="#">КОНТАКТЫ</a>
             </nav>
         </div>
-        <div class="first-screen__footer">
-            <img class="first-screen__image" src="Frame.png">           
+        <div class="first-screen__footer container">
+            <img class="first-screen__image" src="images/Frame.png">           
         
             <div class="first-screen__design">
                 <h1 class="first-screen__title">Дизайн и верстка</h1>
@@ -32,7 +32,7 @@
     </section>
     
     <section class="about-me">
-        <div class="about-me__container">
+        <div class="about-me__container container">
             <h1 class="about-me__title">Обо мне</h1>
         <p class="about-me__paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>         
@@ -40,99 +40,116 @@
     </section>
 
     <section class="numbers">
-        <div class="numbers__item">
-            <img src="numbers__item.png">
+        <div class="numbers__container">
+            <div class="numbers__item">
+                <img src="images/numbers__item.png">
+            </div>
+            <div class="numbers__item">
+                <img src="images/numbers__item.png">
+            </div>
+            <div class="numbers__item">
+                <img src="images/numbers__item.png">
+            </div>
+            <div class="numbers__item">
+                <img src="images/numbers__item.png">
+            </div>
+            <div class="numbers__item">
+                <img src="images/numbers__item.png">
+            </div>
+            <div class="numbers__item">
+                <img src="images/numbers__item.png">
+            </div>
         </div>
-        <div class="numbers__item">
-            <img src="numbers__item.png">
-        </div>
-        <div class="numbers__item">
-            <img src="numbers__item.png">
-        </div>
-        <div class="numbers__item">
-            <img src="numbers__item.png">
-        </div>
-        <div class="numbers__item">
-            <img src="numbers__item.png">
-        </div>
-        <div class="numbers__item">
-            <img src="numbers__item.png">
-        </div>
+        
     </section>
 
     <section class="skills">
         <div class="skills__container">
-            <h1 class="skills__title">Мои навыки</h1>
-            <div>
-                <p class="skills__paragraph">Adobe Photoshop</p>
-                <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
+            <div class="skills__list">
+                <h1 class="skills__title">Мои навыки</h1>
+                <div>
+                    <p class="skills__paragraph">Adobe Photoshop</p>
+                    <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
+                </div>
+                <div>
+                    <p class="skills__paragraph">Adobe Photoshop</p>
+                    <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
+                </div>
+                <div>
+                    <p class="skills__paragraph">Adobe Photoshop</p>
+                    <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
+                </div>
             </div>
             <div>
-                <p class="skills__paragraph">Adobe Photoshop</p>
-                <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
-            </div>
-            <div>
-                <p class="skills__paragraph">Adobe Photoshop</p>
-                <div class="skills__decoration"><div class="skills__decoration_inserted"></div></div>
-            </div>
-        </div>
-        <div>
-            <img class="skills__image" src="Rectangle 3.png">
+                <img class="skills__image" src="images/Rectangle 3.png">
+            </div>        
         </div>        
     </section>
 
     <section class="video">
-        <div>
+        <div class="video__container-for-text">
             <h1 class="video__title">Как я работаю</h1>
             <p class="video__paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
                 Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>            
         </div>
         <div class="video__container-for-image">
-            <img class="video__image" src="video.png">
+            <img class="video__image" src="images/video.png">
+            <img class="video__play" src="images/Vector.png">
         </div>
         
     </section>
 
     <section class="projects">
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.png">            
+        <div class="projects__container">
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.png">            
+            </div>
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.3.png">            
+            </div>
         </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.3.png">            
+        <div class="projects__container projects__container_reverse">
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.png">            
+            </div>
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.3.png">            
+            </div>
         </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.png">            
+        <div class="projects__container projects__container_reverse">
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.3.png">            
+            </div>
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.png">            
+            </div>
         </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.3.png">            
-        </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.3.png">            
-        </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.png">            
-        </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.3.png">            
-        </div>
-        <div class="projects__item">
-            <img class="projects__image" src="Rectangle 7.png">            
+        <div class="projects__container">
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.3.png">            
+            </div>
+            <div class="projects__item">
+                <img class="projects__image" src="images/Rectangle 7.png">            
+            </div>
         </div>
     </section>
 
     <section class="form">
-        <h1 class="form__title">Хотите веб-сайт?</h1>
-        <p class="form__paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        <form class="form__container">
-            <div class="form__name-and-email">
-                <input class="form__input" type="text" name="name" value="Ваше имя">
-                <input class="form__input" type="email" name="login" value="Ваш email">    
-            </div>
+        <div class="form__container">
+            <h1 class="form__title">Хотите веб-сайт?</h1>
+            <p class="form__paragraph">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <form class="form__container-for-input">
+                <div class="form__name-and-email">
+                    <input class="form__input" type="text" name="name" value="Ваше имя">
+                    <input class="form__input" type="email" name="login" value="Ваш email">    
+                </div>
                         
-            <input class="form__input_message" type="text" name="message" value="Сообщение">
-        </form>
+                <input class="form__input_message" type="text" name="message" value="Сообщение">
+            </form>
         <button class="form__button">ОТПРАВИТЬ</button>
+        </div>
+        
     </section>
 
     <section class="footer">
@@ -141,9 +158,9 @@
             <p class="footer__copyright">(с) 2021. Все права защищены.</p>
         </div>
         <div class="footer__vk">
-            <img src="vk.png">
-            <img src="vk.png">
-            <img src="vk.png">
+            <img src="images/vk.png">
+            <img src="images/vk.png">
+            <img src="images/vk.png">
         </div>
     </section>
 </body>
